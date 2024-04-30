@@ -23,10 +23,3 @@ sequelize
     .catch((err) => {
         console.error("server is unable to unable to sync with database:", err);
     });
-sequelize.authenticate()
-    .then((result) => {
-        console.log("Node application is connected to database");
-    })
-    .catch((err) => {
-        console.error("Node application is unable to connect to database:", err);
-    });
